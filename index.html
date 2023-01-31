@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <script src="js/java.js"></script>
+</head>
+<body>
+    <div id="cajapadre">
+        <div id="caja1">
+        <div id="logo">Logo de la empresa <!---<img src="img/code.jpg">---></div>
+        <div id="MMU">Mostrar Mensaje al Usuario</div>
+        </div>
+
+        <div id="caja2">
+            <div id="nombreE">Nombre O Empresa</div>
+             <div id="caja21">
+                <div id="datosA">Datos para insertar un objeto al arreglo <br>
+                    Apodo:  <br>
+                <input type="text" id="apodo">  <br> 
+                Color:  <br>
+                <input type="text" id="color">  <br>
+                Edad:   <br>
+                <input type="text" id="edad">
+                </div>
+                <div id="datosInser"> <br>
+                    objeto perro:  <br>
+                    <input type="text" id="texto1">  <br>
+                    buscar x apodo: <br>
+                    <input type="text" id="contenido"> <br>
+                    buscar x color: <br>
+                    <input type="text" id="contenido1">  <br>
+                    
+
+                </div>
+
+                <div id="operaciones">
+                    <div id="insertar" onclick="clicAgregarArreglo()">Operacion Insertar <br>
+                        <button id="insertar1">Insertar Perro</button>
+                    </div>
+                    <div id="mostrar" onclick="clicmostarPerros()">Operacion Mostrar <br>
+                        <button id="mostrar1">Mostrar Perro</button>
+                    </div>
+                    <div id="insertarA">Insertar al Inicio <br>
+                        <button id="insertarA1" onclick="clicAgregarInicio()">Insertar perro al inicio</button>
+                    </Div>
+                    <div id="buscar">Operacion Buscar <br>
+                        <button id="buscar1" onclick="clicBuscarA()">Buscar x apodo</button> <br>
+                        <button id="buscar2" onclick="clicBuscarC()">Buscar x color</button>
+                    </div>
+                    <div id="eliminar" >Operacion Eliminar <br>
+                        <button id="eliminar1" onclick="clicEliminar()">Eliminar x apodo</button>
+                    </div>
+                    <div id="remove" >Insertar Nuevo Perro   <br>
+                        <button id="nuevo" onclick="clicAgregarOtro()"> Nuevo Arreglo Perro</button>
+                    </div>
+                </div>
+            </div> 
+
+            <div id="caja22">Contenido del Arreglo del Objeto <br>
+                <select id="lista">
+                </select>
+            </div>
+            <div id="caja23">Detalles de un Objecto en espesifico <br>
+               <!--- insertar despues de: <br>
+                <input type="text" id="agregarO">  <br>
+                buscar apodo para insertar despues de: <br>
+                <button id="insertarDes" onclick="clicAgregarOtro()">boton buscar apodo</button>--->                
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
